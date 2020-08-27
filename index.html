@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <head>
@@ -9,47 +9,47 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Coffee Masure</a>
+        <a class="navbar-brand" href="#">ميزان القهوة</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <!--<div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">الخدمات</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">المدونة</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </div>
             </li>
           </ul>
-        </div>
+        </div>-->
       </nav>
       <div class="container">
         <img src="coffee.jpg" class="img-fluid" alt="Responsive image">
        <div class="jumbotron">
-          <h1 class="display-4">Hello There!</h1>
-          <p class="lead">Are you struggling when you massuring your coffee, We are here to help, by creating our magic masure</p>
+          <h1 class="display-4"> لماذا الميزان يفرق</h1>
+          <p class="lead">اذا كنت تريد الحصول على نفس النتيجه يومياً, من الضروري ان تزن قهوتك بالشكل الصحيح من اجل ذلك لقد صممنا هذا المقياس لك </p>
           <hr class="my-4">
 
-          <p>Select how would you like to masure your Coffee.</p>
+          <p>هنا اسرع طريقة للاستمتاع في كوبك اليومي</p>
         
           <div class="card text-center">
             <div class="card-header">
               
             </div>
             <div class="card-body">
-              <h5 class="card-title">How many cups of Coffee do you want?</h5>
+              <h5 class="card-title">ادخل عدد الاكواب</h5>
               <form>
               <div class="form-group">
                 <label for="formControlRange">
-                  <a>cups:</a>
+                  <a>كوب</a>
                   <span id="rangeValue">1</span>
                 </label>
                 <input type="range" class="form-control-range" id="formControlRange" 
@@ -62,14 +62,14 @@
                   document.getElementById("rangeValue").innerHTML = value;
 
                     var coffee = coffeeFunction(value, 7);
-                    document.getElementById("coffee").innerHTML ="You may want to have "+ coffee + " garms of ground coffee, if you don't hava a scale it's about 2 tablespoons";
+                    document.getElementById("coffee").innerHTML =" تحتاج الى "+ coffee + " جرام من القهوة اي ما يعادل ملعقتين طعام ";
 
                     function coffeeFunction(c,d){
                       return c * d;
                     }
                   
                   var water = waterFunction(value, 177.441);
-                  document.getElementById("water").innerHTML = "You may want to have " + water + " ml of water this is equal to a cup of coffee";
+                  document.getElementById("water").innerHTML = " تحتاج الى " + water + " مل من الماء ";
 
                   function waterFunction(a, b) {
                     return a * b;
@@ -79,10 +79,11 @@
               </div>
               <p id="water"></p>
               <p id="coffee"></p>
-              <h3>enjoy your Coffee..</h3>
+              <h3>استمتع بقهوتك</h3>
             </form>
           </div>
           </div>
+          <p class="copy">Copyright by Khalid Almuqbil &copy;	</p>
         </div>
       </div>
 </body>
